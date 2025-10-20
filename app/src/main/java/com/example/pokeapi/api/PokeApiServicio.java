@@ -17,6 +17,6 @@ public interface PokeApiServicio {
 
      @GET("pokemon/{nombre}")
      Call<PokemonDetalle> obtenerPokemon(
-       @Path("Nombre") String nombre
+       @Path("nombre") String nombre
      );
 }
