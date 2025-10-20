@@ -54,7 +54,7 @@ public class PokemonListaFragment extends Fragment {
 
             @Override
             public boolean isEmpty() {
-                return false;
+                return datos.isEmpty();
             }
 
             @Override
@@ -69,12 +69,12 @@ public class PokemonListaFragment extends Fragment {
 
             @Override
             public boolean areAllItemsEnabled() {
-                return false;
+                return true;
             }
 
             @Override
             public boolean isEnabled(int position) {
-                return false;
+                return true;
             }
         };
         lista.setAdapter(adaptador);
